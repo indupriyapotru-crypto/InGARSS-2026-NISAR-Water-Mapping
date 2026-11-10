@@ -4,17 +4,6 @@ An operational dual-frequency (L-band & S-band) polarimetric SAR framework for s
 
 ---
 
-## 🔗 Quick Deliverable Links
-1. **[Jupyter Notebook / Code](InGARSS_2026_NISAR_Water_Mapping.ipynb)**: Complete dual-frequency geospatial pipeline and scientific workflows.
-2. **[Technical Note (Markdown)](TECHNICAL_NOTE.md)** / **[Technical Note (DOCX)](TECHNICAL_NOTE.docx)**: Full scientific report, mathematical formulation, and numerical scorecard.
-3. **[Presentation Slides (PPTX)](InGARSS_2026_NISAR_Water_Mapping.pptx)**: Visual executive summary, methodology diagrams, and high-resolution maps.
-4. **[Output Visualizations / Figures](outputs/plots/)**:
-   - [Dual-Frequency Fusion Map](outputs/plots/Dual_Frequency_Fusion.png)
-   - [Multi-Temporal Dynamics Map](outputs/plots/Multi_Temporal_Dynamics.png)
-   - [Hydrological & Polarimetric Validation](outputs/plots/Hydrological_and_Polarimetric_Validation.png)
-
----
-
 ## 📊 Results (57,557.48 km² Swath)
 | Hydrological Metric | Area (km²) | Pixels | % of Swath / Class |
 | :--- | :--- | :--- | :--- |
