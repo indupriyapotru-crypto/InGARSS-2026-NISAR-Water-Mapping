@@ -1,0 +1,19 @@
+# Data & HDF5
+data/
+*.h5
+*.xml
+*.bin
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.tmp
+temp_*
+test_*
+inspect_*
+make_*
+update_*
+check_*
+gen_*
+setup_git_and_push.py
