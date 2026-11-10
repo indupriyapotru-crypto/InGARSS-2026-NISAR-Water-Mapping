@@ -15,15 +15,7 @@ An operational dual-frequency (L-band & S-band) polarimetric SAR framework for s
 
 ---
 
-## 🛰️ Methodology Summary
-- **Linear-Domain Sensor Harmonization**: S-band imagery (28.4 m) resampled to L-band grid (80.0 m) strictly in linear power domain (`P = 10^(dB/10)`) before re-conversion to dB, avoiding Jensen's inequality bias.
-- **Sandbar De-aliasing via NDPI**: Normalized Difference Polarization Index (`NDPI = (gamma0_HH - gamma0_HV) / (gamma0_HH + gamma0_HV)`) deployed with threshold `NDPI > 0.40` to suppress specular bare sands that alias as open water.
-- **Linear NDFI Dual-Frequency Fusion**: Normalized Difference Frequency Index evaluated on linear backscatter power to capture canopy-penetrating L-band signals and rough water S-band scattering, recovering 223.07 km² (+9.75%) of missed inundation.
-- **Hydrological Distance Partitioning**: Continuous river buffering (`distance_transform_edt`) distinguishes near-channel lateral overbank spills (<= 1.5 km) from inland floodplain depression chaurs (> 1.5 km).
-
----
-
-## 📊 Quantitative Scorecard (57,557.48 km² Swath)
+## 📊 Results (57,557.48 km² Swath)
 | Hydrological Metric | Area (km²) | Pixels | % of Swath / Class |
 | :--- | :--- | :--- | :--- |
 | **Total Valid Scene Swath** | **57,557.48** | **8,993,357** | 100.00% |
@@ -39,8 +31,3 @@ An operational dual-frequency (L-band & S-band) polarimetric SAR framework for s
 | ↳ Near-Channel Lateral Overbank (<= 1.5 km) | 34.32 | 5,362 | 4.7% of New Water |
 | ↳ Inland Floodplain Chaurs (> 1.5 km) | 691.63 | 108,067 | 95.3% of New Water |
 | **Stable Non-Water Land** | **53,180.36** | **8,309,432** | **92.40%** |
-
----
-
-## 👥 Authors
-- **InGARSS 2026 Hackathon Team**
